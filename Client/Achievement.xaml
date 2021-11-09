@@ -1,0 +1,28 @@
+﻿<Window x:Class="Client.Logros"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        xmlns:gif="https://github.com/XamlAnimatedGif/XamlAnimatedGif"
+        
+        Title="Logros" Height="450" Width="800">
+    <Grid Background="#DCDCDC">
+        <Label Content="Archievement" HorizontalAlignment="Left" Margin="411,13,0,0" FontSize="36" VerticalAlignment="Top" FontFamily="Segoe Script" FontWeight="Bold"/>
+        <Button Content="Regresar" HorizontalAlignment="Left" Margin="407,385,0,0" VerticalAlignment="Top" Width="75" Click="ExitClick"/>
+        <Label x:Name="lbAchievement1" Content="Obten tu primer victoria" HorizontalAlignment="Left" Margin="485,94,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Dubai Medium" IsEnabled="False"/>
+        <Label x:Name="lbAchievement2" Content="Consigue 10 victorias!" HorizontalAlignment="Left" Margin="485,158,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Dubai Medium" IsEnabled="False"/>
+        <Label x:Name="lbAchievement3" Content="En buena hora 250 victorias!!!" HorizontalAlignment="Left" Margin="485,215,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Dubai Medium" IsEnabled="False"/>
+        <Label x:Name="lbAchievement4" Content="Realiza 2 amigos" HorizontalAlignment="Left" Margin="485,275,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Dubai Medium" IsEnabled="False"/>
+        <Label x:Name="lbAchievement5" Content="Primer derrota?" HorizontalAlignment="Left" Margin="485,336,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Dubai Medium" IsEnabled="False"/>
+        <Image gif:AnimationBehavior.SourceUri="/Resources/Images/logro0.gif" Margin="10,13,393.6,44" 
+             gif:AnimationBehavior.RepeatBehavior="Forever"  />
+        <Image x:Name="imgAchievement1" HorizontalAlignment="Left" Height="53" Margin="411,80,0,0" VerticalAlignment="Top" Width="52" Source="Resources/Images/achievement1.jpg" Opacity="0.5"/>
+        <Image x:Name="imgAchievement2" HorizontalAlignment="Left" Height="53" Margin="411,140,0,0" VerticalAlignment="Top" Width="52" Source="Resources/Images/achievement2.jpg" Opacity="0.5"/>
+        <Image x:Name="imgAchievement3" HorizontalAlignment="Left" Height="53" Margin="411,202,0,0" VerticalAlignment="Top" Width="52" Source="Resources/Images/achievement3.jpg" Opacity="0.5"/>
+        <Image x:Name="imgAchievement4" HorizontalAlignment="Left" Height="53" Margin="411,262,0,0" VerticalAlignment="Top" Width="52" Source="Resources/Images/achievement4.jpg" Opacity="0.5"/>
+        <Image x:Name="imgAchievement5" HorizontalAlignment="Left" Height="53" Margin="411,323,0,0" VerticalAlignment="Top" Width="52" Source="Resources/Images/achievement5.jpg" Opacity="0.5"/>
+
+    </Grid>
+</Window>

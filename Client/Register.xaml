@@ -1,0 +1,32 @@
+﻿<Window x:Class="Client.Register"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="Registrar" Height="450" Width="800">
+    <Grid Margin="30">
+        <StackPanel Background="BlanchedAlmond">
+            <Grid Height="340" Margin="0,0,-0.4,0">
+                <Label Content="Crear Cuenta" FontSize="40" HorizontalAlignment="Center" Margin="297,10,114.6,173.4" RenderTransformOrigin="0.255,-0.745" Width="322"  />
+                <Label Content="Correo Electronico:" FontSize="20" HorizontalAlignment="Center" Margin="297,86,225.6,131.2" RenderTransformOrigin="0.255,-0.745" Width="211"  />
+                <Label Content="Contraseña:" FontSize="20" HorizontalAlignment="Center" Margin="297,148,292.6,73.8" RenderTransformOrigin="0.255,-0.745" Width="144"  />
+                <Label Content="*Ingresa el codigo enviado a tu correo:" FontSize="15" HorizontalAlignment="Center" Margin="195,266,225.6,-32" RenderTransformOrigin="0.255,-0.745" Width="313"  />
+                <Label Content="*Que nametag te gustaria:" FontSize="15" HorizontalAlignment="Center" Margin="195,296,272.6,-54" RenderTransformOrigin="0.255,-0.745" Width="266"  />
+
+                <TextBox Name="tbCorreo" FontSize="15" Margin="297,120,167,197" />
+                <PasswordBox Name="pbPassword" HorizontalAlignment="Left" Margin="297,181,0,0" VerticalAlignment="Top" Width="270" Height="26"/>
+                <Button Content="Salir" HorizontalAlignment="Left" Margin="318,217,0,0" VerticalAlignment="Top" Width="75" Click="ButtonSalir_Click" Background="WhiteSmoke"/>
+                <Button Content="Continuar" HorizontalAlignment="Left" Margin="492,217,0,0" VerticalAlignment="Top" Width="75" Click="ButtonContinuar_Click"/>
+                <Button Content="Aceptar" HorizontalAlignment="Left" Margin="659,270,0,0" VerticalAlignment="Top" Width="71" Click="ButtonAceptar_Click" Height="53"/>
+
+                <Image HorizontalAlignment="Left" Height="316" Margin="10,10,0,-54" VerticalAlignment="Top" Width="185" />
+
+                <TextBox Name="tbCodigo" FontSize="15" Margin="463,270,94,47" IsEnabled="False" />
+                <TextBox Name="tbNametag" FontSize="15" Margin="463,300,94,17" IsEnabled="False" />
+            </Grid>
+
+        </StackPanel>
+    </Grid>
+</Window>

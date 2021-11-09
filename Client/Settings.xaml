@@ -1,0 +1,33 @@
+﻿<Window x:Class="Client.Settings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        xmlns:gif="https://github.com/XamlAnimatedGif/XamlAnimatedGif"
+        Title="Settings" Height="450" Width="800">
+    <Grid>
+        <Rectangle x:Name="filtro" Fill="#FFFFB490" HorizontalAlignment="Left" Height="420" Stroke="Black" VerticalAlignment="Top" Width="794" Margin="0,0,-0.4,0" IsEnabled="False" Opacity="0.3" Visibility="Hidden"/>
+        <Label Content="Configuracion" FontSize="40" HorizontalAlignment="Left" Margin="435,30,0,0" VerticalAlignment="Top" FontFamily="Segoe Script" FontWeight="Bold"/>
+
+        <Label Content="Idioma" HorizontalAlignment="Left" Margin="435,127,0,0" VerticalAlignment="Top"/>
+        <Label Content="Sonido" HorizontalAlignment="Left" Margin="435,227,0,0" VerticalAlignment="Top"/>
+        <Label Content="Filtro visual" HorizontalAlignment="Left"  Margin="435,179,0,0"  VerticalAlignment="Top"/>
+        <ComboBox Name="Idiomas" HorizontalAlignment="Left" Margin="533,130,0,0" VerticalAlignment="Top" Width="120"     >
+            <ComboBoxItem>Espaniol</ComboBoxItem>
+            <ComboBoxItem>English</ComboBoxItem>
+        </ComboBox>
+        <Button Content="Cerrar Sesion" HorizontalAlignment="Left" Margin="682,373,0,0" VerticalAlignment="Top" Width="75" Click="CerrarSesionClick"/>
+        <Button Content="Regresar" HorizontalAlignment="Left" Margin="395,373,0,0" VerticalAlignment="Top" Width="75" Click="RegresarClick"/>
+
+        
+        <CheckBox x:Name="chbVista" Content="Vista" HorizontalAlignment="Left" Margin="533,185,0,0" VerticalAlignment="Top" />
+        <CheckBox Content="♫" HorizontalAlignment="Left" Margin="533,233,0,0" VerticalAlignment="Top" />
+        <Image gif:AnimationBehavior.SourceUri="/Resources/Images/fondo1.gif" Margin="10,13,514.6,28" 
+             gif:AnimationBehavior.RepeatBehavior="Forever"  />
+        
+
+
+    </Grid>
+</Window>

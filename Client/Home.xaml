@@ -1,0 +1,25 @@
+﻿<Window x:Class="Client.Home"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="MemoryUv" Height="417" Width="704">
+    <Grid Background="#DCDCDC" Margin="0,0,2,-1" RenderTransformOrigin="0.549,0.545">
+        <Label Content="Memory UV" HorizontalAlignment="Left" Margin="243,10,0,0" VerticalAlignment="Top" Width="244" FontSize="36" FontFamily="Segoe Script" FontWeight="Bold"/>
+        <Button Content="Configuración" HorizontalAlignment="Left" Margin="217,346,0,0" VerticalAlignment="Top" Width="110" Height="28" RenderTransformOrigin="0.241,0.446" Click="SettingsClick"/>
+        <Button Content="Salir" Click="ExitClick" HorizontalAlignment="Left" Margin="398,346,0,0" VerticalAlignment="Top" Width="108" Height="28" RenderTransformOrigin="0.899,0.393"/>
+        <StackPanel Background="White"  HorizontalAlignment="Left" Height="282" Margin="14,60,0,0" VerticalAlignment="Top" Width="114"/>
+        <Button Content="Amigos" HorizontalAlignment="Left" Margin="24,112,0,0" VerticalAlignment="Top" Width="74"  Click="FriendsClick" Background="White" BorderBrush="#FFC5C2C2" FontFamily="SimSun"/>
+        <Button Content="Logros" HorizontalAlignment="Left" Margin="24,185,0,0" VerticalAlignment="Top" Width="74"  Background="White" BorderBrush="#FFC5C2C2" FontFamily="SimSun" Click="ArchievementClick"/>
+        <Button Content="Personalizar" HorizontalAlignment="Left" Margin="24,268,0,0" VerticalAlignment="Top" Width="74" Background="White" BorderBrush="#FFC5C2C2" FontFamily="SimSun"/>
+        <Label Content="Bienvenido al juego " HorizontalAlignment="Left" Margin="266,82,0,0" VerticalAlignment="Top"/>
+        <StackPanel Background="White"  HorizontalAlignment="Left" Height="282" Margin="570,60,0,0" VerticalAlignment="Top" Width="114"/>
+        <Button Content="Ranking" HorizontalAlignment="Left" Margin="589,112,0,0" VerticalAlignment="Top" Width="74"  Background="White" BorderBrush="#FFC5C2C2" FontFamily="SimSun" RenderTransformOrigin="0.399,0.667"/>
+        <Button Content="Crear sala" HorizontalAlignment="Left" Margin="589,185,0,0" VerticalAlignment="Top" Width="74"  Background="White" BorderBrush="#FFC5C2C2" FontFamily="SimSun"/>
+        <Button Content="Chat" HorizontalAlignment="Left" Margin="589,268,0,0" VerticalAlignment="Top" Width="74" FontFamily="SimSun" Click="ChatClick" Background="White" BorderBrush="#FFC5C2C2"/>
+        <TextBlock x:Name="lbUsername" HorizontalAlignment="Left" Margin="389,92,0,0" VerticalAlignment="Top" Height="26" Width="98"/>
+
+    </Grid>
+</Window>

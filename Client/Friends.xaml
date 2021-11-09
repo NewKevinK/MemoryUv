@@ -1,0 +1,22 @@
+﻿<Window x:Class="Client.Friends"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="MemoryUv" Height="394" Width="628">
+    <Grid Background="#DCDCDC" Margin="0,0,2,1">
+        <Label Content="Amigos" HorizontalAlignment="Left" Margin="227,10,0,0" VerticalAlignment="Top" Width="244" FontSize="36" FontFamily="Segoe Script" FontWeight="Bold"/>
+        <ListBox x:Name="listFriends" HorizontalAlignment="Left" Height="220" Margin="28,114,0,0" VerticalAlignment="Top" Width="198"/>
+        <ListBox x:Name="listSearchUsers"  HorizontalAlignment="Left" Height="154" Margin="398,144,0,0" VerticalAlignment="Top" Width="166"/>
+        <Button Content="Eliminar amigo"  FontFamily="SimSun" HorizontalAlignment="Left" Margin="18,85,0,0" VerticalAlignment="Top" Width="95" Click="ClicRemoveFriend" Height="21"/>
+        <Label Content="Buscar amigos" HorizontalAlignment="Left" Margin="352,83,0,0" VerticalAlignment="Top"/>
+        <Button Content="Buscar"  FontFamily="SimSun" HorizontalAlignment="Left" Margin="455,88,0,0" VerticalAlignment="Top" Width="57" Click="ClicSearchFriend"/>
+        <Button Content="Agregar"  FontFamily="SimSun" HorizontalAlignment="Left" Margin="531,88,0,0" VerticalAlignment="Top" Width="62" Click="ClicAddFriend"/>
+        <TextBox Name="tbxNametag" HorizontalAlignment="Left" Height="23" Margin="361,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="232"/>
+        <Button Content="Salir"  FontFamily="SimSun" HorizontalAlignment="Left" Margin="490,321,0,0" VerticalAlignment="Top" Width="74" Click="ClicExit"/>
+        <Button Content="Solicitudes"  FontFamily="SimSun" HorizontalAlignment="Left" Margin="498,10,0,0" VerticalAlignment="Top" Width="95" Click="ClicRequests" Height="20"/>
+    </Grid>
+</Window>
+

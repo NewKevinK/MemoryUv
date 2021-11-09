@@ -1,0 +1,22 @@
+﻿<Window x:Class="Client.Room"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="Sala" Height="408" Width="744.5">
+    <Grid Background="#DCDCDC" Margin="0,0,2,1">
+        <Label Content="Sala" HorizontalAlignment="Left" Margin="318,10,0,0" VerticalAlignment="Top" Width="244" FontSize="36" FontFamily="Segoe Script" FontWeight="Bold"/>
+        <Label Content="Seleccionar sección:" HorizontalAlignment="Left" Margin="28,101,0,0" VerticalAlignment="Top"/>
+        <Label Content="Seleccionar dificultad:" HorizontalAlignment="Left" Margin="28,164,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbSection" HorizontalAlignment="Left" Margin="164,105,0,0" VerticalAlignment="Top" Width="193"/>
+        <ComboBox x:Name="cbDifficulty" HorizontalAlignment="Left" Margin="164,168,0,0" VerticalAlignment="Top" Width="193"/>
+        <Button Content="Salir"  FontFamily="SimSun" HorizontalAlignment="Left" Margin="380,348,0,0" VerticalAlignment="Top" Width="74" Click="ClicExit"/>
+        <Button Content="Iniciar juego"  FontFamily="SimSun" HorizontalAlignment="Left" Margin="222,348,0,0" VerticalAlignment="Top" Width="118" Click="ClicStartGame"/>
+        <ListBox x:Name="list" HorizontalAlignment="Left" Height="196" Margin="550,101,0,0" VerticalAlignment="Top" Width="161"/>
+        <Label Content="Invitar amigo" HorizontalAlignment="Left" Margin="589,59,0,0" VerticalAlignment="Top"/>
+        <Button Content="Incluir"  FontFamily="SimSun" HorizontalAlignment="Left" Margin="637,318,0,0" VerticalAlignment="Top" Width="74" Click="ClicAdd"/>
+
+    </Grid>
+</Window>

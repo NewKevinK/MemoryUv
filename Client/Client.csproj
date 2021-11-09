@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D6F80FAB-D081-452C-BD65-DCBEE3E44F8D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Client</RootNamespace>
+    <AssemblyName>Client</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Forms.DataVisualization.Design" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WpfAnimatedGif, Version=2.0.0.0, Culture=neutral, PublicKeyToken=9e7cd3b544a090dc, processorArchitecture=MSIL">
+      <HintPath>..\packages\WpfAnimatedGif.2.0.2\lib\net40\WpfAnimatedGif.dll</HintPath>
+    </Reference>
+    <Reference Include="XamlAnimatedGif, Version=2.0.0.0, Culture=neutral, PublicKeyToken=20a987d8023d9690, processorArchitecture=MSIL">
+      <HintPath>..\packages\XamlAnimatedGif.2.0.2\lib\net45\XamlAnimatedGif.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.xaml.cs">
+      <DependentUpon>ChangePassword.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FriendRequests.xaml.cs">
+      <DependentUpon>FriendRequests.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Friends.xaml.cs">
+      <DependentUpon>Friends.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Achievement.xaml.cs">
+      <DependentUpon>Achievement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Ranking.xaml.cs">
+      <DependentUpon>Ranking.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Register.xaml.cs">
+      <DependentUpon>Register.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Room.xaml.cs">
+      <DependentUpon>Room.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.xaml.cs">
+      <DependentUpon>Settings.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Chat.xaml.cs">
+      <DependentUpon>Chat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ChatService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Connected Services\ChatService\ChatService.wsdl" />
+    <None Include="Connected Services\ChatService\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ChatService\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ChatService\item2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ChatService\item3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="ChangePassword.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Chat.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FriendRequests.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Friends.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Achievement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Ranking.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Register.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Room.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Settings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ChatService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ChatService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ChatService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ChatService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Data\Data.csproj">
+      <Project>{47528872-0E39-4C93-BAA0-F9B668BFD5C7}</Project>
+      <Name>Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Host\Host.csproj">
+      <Project>{4ACA04A0-C11A-49EA-9E6F-9A7474DF23BD}</Project>
+      <Name>Host</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logic\Logic.csproj">
+      <Project>{AC878565-9CF3-4686-A8D8-9E0B7B78B07C}</Project>
+      <Name>Logic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\fondo1.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\logro0.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\achievement1.jpg" />
+    <Resource Include="Resources\Images\achievement2.jpg" />
+    <Resource Include="Resources\Images\achievement3.jpg" />
+    <Resource Include="Resources\Images\achievement4.jpg" />
+    <Resource Include="Resources\Images\achievement5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\logro2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\AFEL\AlergiasAlimentarias1.jpg" />
+    <Resource Include="Resources\AFEL\Atletismo1.jpg" />
+    <Resource Include="Resources\AFEL\Autoestima1.png" />
+    <Resource Include="Resources\AFEL\Baloncesto1.jpg" />
+    <Resource Include="Resources\AFEL\Balonmano1.jpg" />
+    <Resource Include="Resources\AFEL\Beisbol1.jpg" />
+    <Resource Include="Resources\AFEL\BiologiaCancer1.jpg" />
+    <Resource Include="Resources\AFEL\ConociendoVirusPapilomaHumano1.png" />
+    <Resource Include="Resources\AFEL\DietaControlPeso1.jpg" />
+    <Resource Include="Resources\AFEL\DrogasMitosRealidad1.jpg" />
+    <Resource Include="Resources\AFEL\EducacionSexual1.jpg" />
+    <Resource Include="Resources\AFEL\FloresBach1.jpg" />
+    <Resource Include="Resources\AFEL\FutbolAmericano1.jpg" />
+    <Resource Include="Resources\AFEL\FutbolRapido1.jpg" />
+    <Resource Include="Resources\AFEL\GimnasiaAerobica1.jpg" />
+    <Resource Include="Resources\AFEL\Halterofilia1.jpg" />
+    <Resource Include="Resources\AFEL\Herbolaria1.jpg" />
+    <Resource Include="Resources\AFEL\InfeccionesTransmicionSexual1.png" />
+    <Resource Include="Resources\AFEL\IntroduccionPsicoanalisis1.jpg" />
+    <Resource Include="Resources\AFEL\Judo1.jpg" />
+    <Resource Include="Resources\AFEL\KarateDo1.jpg" />
+    <Resource Include="Resources\AFEL\LactanciaMaterna1.jpg" />
+    <Resource Include="Resources\AFEL\ManejoConflictoNoviazgo1.png" />
+    <Resource Include="Resources\AFEL\Natacion1.jpg" />
+    <Resource Include="Resources\AFEL\PrevencionHipertensionArterial1.jpg" />
+    <Resource Include="Resources\AFEL\ReanimacionNeonatal1.png" />
+    <Resource Include="Resources\AFEL\SaludBucal1.jpg" />
+    <Resource Include="Resources\AFEL\Softbol1.jpg" />
+    <Resource Include="Resources\AFEL\Taekwondo1.jpg" />
+    <Resource Include="Resources\AFEL\Tenis1.jpg" />
+    <Resource Include="Resources\AFEL\Tochito1.jpg" />
+    <Resource Include="Resources\AFEL\Voleibol1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Carreras\Administracion1.jpg" />
+    <Resource Include="Resources\Carreras\AgroecologiaSoberaniaAlimentaria1.jpg" />
+    <Resource Include="Resources\Carreras\Arqueologia1.jpg" />
+    <Resource Include="Resources\Carreras\Arquitectura1.jpg" />
+    <Resource Include="Resources\Carreras\ArtesVisuales1.jpg" />
+    <Resource Include="Resources\Carreras\Biologia1.jpg" />
+    <Resource Include="Resources\Carreras\CirujanoDentista1.jpg" />
+    <Resource Include="Resources\Carreras\Contaduria1.jpg" />
+    <Resource Include="Resources\Carreras\Danzacontemporanea1.jpg" />
+    <Resource Include="Resources\Carreras\derecho1.jpg" />
+    <Resource Include="Resources\Carreras\Enfermeria1.png" />
+    <Resource Include="Resources\Carreras\Fisica1.png" />
+    <Resource Include="Resources\Carreras\Geografia1.jpg" />
+    <Resource Include="Resources\Carreras\IngAgronomo1.jpg" />
+    <Resource Include="Resources\Carreras\IngAlimentos1.jpg" />
+    <Resource Include="Resources\Carreras\IngAmbiental1.jpg" />
+    <Resource Include="Resources\Carreras\IngBiomedica1.jpg" />
+    <Resource Include="Resources\Carreras\IngCivil1.jpg" />
+    <Resource Include="Resources\Carreras\IngElectrica1.jpg" />
+    <Resource Include="Resources\Carreras\IngFarmaceuticoBiologo1.jpg" />
+    <Resource Include="Resources\Carreras\IngMecanica1.jpg" />
+    <Resource Include="Resources\Carreras\IngQuimica1.png" />
+    <Resource Include="Resources\Carreras\IngSoftware1.jpeg" />
+    <Resource Include="Resources\Carreras\Matematicas1.jpg" />
+    <Resource Include="Resources\Carreras\MedicaCirujano1.jpg" />
+    <Resource Include="Resources\Carreras\Musica1.jpg" />
+    <Resource Include="Resources\Carreras\Nutricion1.jpg" />
+    <Resource Include="Resources\Carreras\Pedagogia1.jpeg" />
+    <Resource Include="Resources\Carreras\Psicologia1.png" />
+    <Resource Include="Resources\Carreras\RedesServicioComputo1.png" />
+    <Resource Include="Resources\Carreras\Sociologia1.jpg" />
+    <Resource Include="Resources\Carreras\Teatro1.png" />
+    <Resource Include="Resources\Carreras\TecnologiasComputacionales1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>
